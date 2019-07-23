@@ -1,0 +1,18 @@
+# Default Visual studio folders
+.vs/
+Debug/
+ipch/
+
+# Project unnecessary folders
+PartenrsVisualCpp/Debug/
+
+# Default unnecessary files extensions
+*.opendb
+*.db
+*.obj
+*.idb
+*.pdb
+*.pch
+*.log
+*.tlog
+*.lastbuildstate
