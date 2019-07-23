@@ -5,7 +5,7 @@
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 using namespace Singleton;
 
-namespace PartenrsVisualCpp {
+namespace UnitTests {
     TEST_CLASS(SingletonTest) {
     public:
     Calculator* Fixture;
@@ -29,17 +29,17 @@ namespace PartenrsVisualCpp {
     }
 
     TEST_METHOD(TestCalculatorSub) {
-        Fixture->Sub(DEFAULT_INT, DEFAULT_INT);
+        Fixture->Substract(DEFAULT_INT, DEFAULT_INT);
         Assert::AreEqual(SUB_RESULT, Fixture->GetResult());
     }
 
     TEST_METHOD(TestCalculatorMult) {
-        Fixture->Mult(DEFAULT_INT, DEFAULT_INT);
+        Fixture->Multiply(DEFAULT_INT, DEFAULT_INT);
         Assert::AreEqual(MULT_RESULT, Fixture->GetResult());
     }
 
     TEST_METHOD(TestCalculatorDiv) {
-        Fixture->Div(DEFAULT_INT, DEFAULT_INT);
+        Fixture->Divide(DEFAULT_INT, DEFAULT_INT);
         Assert::AreEqual(DIV_RESULT, Fixture->GetResult());
     }
     };

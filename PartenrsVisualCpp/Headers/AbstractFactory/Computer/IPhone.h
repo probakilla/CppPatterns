@@ -1,0 +1,12 @@
+#pragma once
+
+#include <string>
+
+namespace AbstractFactory {
+    class IPhone {
+        public:
+        virtual ~IPhone() = default;
+        virtual std::string GetBrand() = 0;
+    };
+}
+

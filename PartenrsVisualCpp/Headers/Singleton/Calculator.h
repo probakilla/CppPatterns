@@ -6,9 +6,9 @@ namespace Singleton {
         static Calculator* GetInstance();
         ~Calculator();
         void Add(int a, int b);
-        void Sub(int a, int b);
-        void Mult(int a, int b);
-        void Div(int a, int b);
+        void Substract(int a, int b);
+        void Multiply(int a, int b);
+        void Divide(int a, int b);
         int GetResult();
 
         private:

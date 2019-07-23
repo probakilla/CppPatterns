@@ -24,6 +24,33 @@
     <ClInclude Include="Headers\Singleton\Calculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Headers\AbstractFactory\Computer\IComputer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\AbstractFactory\Computer\WindowsComputer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\AbstractFactory\Computer\LinuxComputer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\AbstractFactory\Computer\IPhone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\AbstractFactory\Computer\LinuxPhone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\AbstractFactory\Computer\WindowsPhone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\AbstractFactory\Factory\IFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\AbstractFactory\Factory\LinuxFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\AbstractFactory\Factory\WindowsFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -33,6 +60,27 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="UnitTests\SingletonTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\AbstractFactory\Computer\LinuxComputer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\AbstractFactory\Computer\WindowsComputer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\AbstractFactory\Computer\LinuxPhone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\AbstractFactory\Computer\WindowsPhone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\AbstractFactory\Factory\LinuxFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\AbstractFactory\Factory\WindowsFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTests\FactoryTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

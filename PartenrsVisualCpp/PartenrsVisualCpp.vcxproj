@@ -75,7 +75,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\Singleton;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers;$(IncludePath)</IncludePath>
+    <IncludePath>D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\AbstractFactory\Factory;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\AbstractFactory\Computer;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\AbstractFactory;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\Singleton;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers;$(IncludePath)</IncludePath>
     <SourcePath>D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Sources\Singleton;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -156,11 +156,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Headers\AbstractFactory\Computer\WindowsComputer.h" />
     <ClInclude Include="Headers\Singleton\Calculator.h" />
     <ClInclude Include="Headers\stdafx.h" />
     <ClInclude Include="Headers\targetver.h" />
+    <ClInclude Include="Headers\AbstractFactory\Factory\IFactory.h" />
+    <ClInclude Include="Headers\AbstractFactory\Computer\IComputer.h" />
+    <ClInclude Include="Headers\AbstractFactory\Computer\LinuxComputer.h" />
+    <ClInclude Include="Headers\AbstractFactory\Computer\IPhone.h" />
+    <ClInclude Include="Headers\AbstractFactory\Computer\LinuxPhone.h" />
+    <ClInclude Include="Headers\AbstractFactory\Computer\WindowsPhone.h" />
+    <ClInclude Include="Headers\AbstractFactory\Factory\LinuxFactory.h" />
+    <ClInclude Include="Headers\AbstractFactory\Factory\WindowsFactory.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="UnitTests\FactoryTest.cpp" />
+    <ClCompile Include="Sources\AbstractFactory\Factory\LinuxFactory.cpp" />
+    <ClCompile Include="Sources\AbstractFactory\Computer\LinuxPhone.cpp" />
+    <ClCompile Include="Sources\AbstractFactory\Computer\LinuxComputer.cpp" />
+    <ClCompile Include="Sources\AbstractFactory\Computer\WindowsComputer.cpp" />
     <ClCompile Include="Sources\Singleton\Calculator.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -169,6 +183,8 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="UnitTests\SingletonTest.cpp" />
+    <ClCompile Include="Sources\AbstractFactory\Computer\WindowsPhone.cpp" />
+    <ClCompile Include="Sources\AbstractFactory\Factory\WindowsFactory.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

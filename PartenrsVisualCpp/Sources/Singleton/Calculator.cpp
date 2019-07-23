@@ -14,15 +14,15 @@ namespace Singleton {
         result = a + b;
     }
 
-    void Calculator::Sub(int a, int b) {
+    void Calculator::Substract(int a, int b) {
         result = a - b;
     }
 
-    void Calculator::Mult(int a, int b) {
+    void Calculator::Multiply(int a, int b) {
         result = a * b;
     }
 
-    void Calculator::Div(int a, int b) {
+    void Calculator::Divide(int a, int b) {
         result = a / b;
     }
 
