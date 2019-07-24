@@ -22,42 +22,39 @@ namespace UnitTests {
 
     TEST_METHOD(TestWindowsFactoryComputer) {
         InitializeWindowsFactory();
-        IComputer* computer = Fixture->GetComputer();
+        unique_ptr<IComputer> computer(Fixture->GetComputer());
         string expected = "Windows Computer";
         Assert::AreEqual(expected, computer->GetBrand());
-        delete(computer);
     }
 
     TEST_METHOD(TestWindowsFactoryPhone) {
         InitializeWindowsFactory();
-        IPhone* phone = Fixture->GetPhone();
+        unique_ptr<IPhone> phone(Fixture->GetPhone());
         string expected = "Windows Phone";
         Assert::AreEqual(expected, phone->GetBrand());
-        delete(phone);
     }
 
     TEST_METHOD(TestLinuxFactoryComputer) {
         InitializeLinuxFactory();
-        IComputer* computer = Fixture->GetComputer();
+        unique_ptr<IComputer> computer(Fixture->GetComputer());
         string expected = "Linux Computer";
         Assert::AreEqual(expected, computer->GetBrand());
-        delete(computer);
     }
 
     TEST_METHOD(TestLinuxFactoryPhone) {
         InitializeLinuxFactory();
-        unique_ptr<IPhone> phone = make_unique<IPhone>(Fixture->GetPhone());
+        unique_ptr<IPhone> phone(Fixture->GetPhone());
         string expected = "Linux Phone";
         Assert::AreEqual(expected, phone->GetBrand());
     }
 
     private:
     void InitializeWindowsFactory() {
-        Fixture = make_unique<IFactory>(new WindowsFactory());
+        Fixture = make_unique<WindowsFactory>();
     }
 
     void InitializeLinuxFactory() {
-        Fixture = make_unique<IFactory>(new LinuxFactory());
+        Fixture = make_unique<LinuxFactory>();
     }
     };
 }

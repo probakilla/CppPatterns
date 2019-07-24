@@ -4,11 +4,11 @@
 #include "LinuxPhone.h"
 
 namespace AbstractFactory {
-    IComputer* LinuxFactory::GetComputer() {
+    IComputer* LinuxFactory::GetComputer() const {
         return new LinuxComputer();
     }
 
-    IPhone* LinuxFactory::GetPhone() {
+    IPhone* LinuxFactory::GetPhone() const {
         return new LinuxPhone();
     }
 }

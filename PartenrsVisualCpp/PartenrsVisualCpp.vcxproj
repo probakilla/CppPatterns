@@ -75,7 +75,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\AbstractFactory\Factory;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\AbstractFactory\Computer;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\AbstractFactory;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\Singleton;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers;$(IncludePath)</IncludePath>
+    <IncludePath>D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\Composite;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\Builder\Army;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\Builder;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\AbstractFactory\Factory;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\AbstractFactory\Computer;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\AbstractFactory;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers\Singleton;D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Headers;$(IncludePath)</IncludePath>
     <SourcePath>D:\protable_env\repos\PartenrsVisualCpp\PartenrsVisualCpp\Sources\Singleton;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -157,6 +157,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Headers\AbstractFactory\Computer\WindowsComputer.h" />
+    <ClInclude Include="Headers\Composite\AbstractUnit.h" />
+    <ClInclude Include="Headers\Composite\Army.h" />
+    <ClInclude Include="Headers\Composite\IUnit.h" />
+    <ClInclude Include="Headers\Composite\ProtossUnit.h" />
+    <ClInclude Include="Headers\Composite\TerranUnit.h" />
+    <ClInclude Include="Headers\Composite\ZergUnit.h" />
     <ClInclude Include="Headers\Singleton\Calculator.h" />
     <ClInclude Include="Headers\stdafx.h" />
     <ClInclude Include="Headers\targetver.h" />
@@ -170,6 +176,8 @@
     <ClInclude Include="Headers\AbstractFactory\Factory\WindowsFactory.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Sources\Composite\AbstractUnit.cpp" />
+    <ClCompile Include="Sources\Composite\Army.cpp" />
     <ClCompile Include="UnitTests\FactoryTest.cpp" />
     <ClCompile Include="Sources\AbstractFactory\Factory\LinuxFactory.cpp" />
     <ClCompile Include="Sources\AbstractFactory\Computer\LinuxPhone.cpp" />

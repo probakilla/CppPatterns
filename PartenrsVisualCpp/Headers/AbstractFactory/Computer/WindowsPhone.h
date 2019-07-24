@@ -6,7 +6,7 @@ namespace AbstractFactory {
     class WindowsPhone : public IPhone {
         public:
         WindowsPhone() = default;
-        virtual std::string GetBrand();
+        virtual std::string GetBrand() const;
     };
 }
 

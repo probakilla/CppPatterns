@@ -4,11 +4,11 @@
 #include "WindowsPhone.h"
 
 namespace AbstractFactory {
-    IComputer* WindowsFactory::GetComputer() {
+    IComputer* WindowsFactory::GetComputer() const {
         return new WindowsComputer();
     }
 
-    IPhone* WindowsFactory::GetPhone() {
+    IPhone* WindowsFactory::GetPhone() const {
         return new WindowsPhone();
     }
 }

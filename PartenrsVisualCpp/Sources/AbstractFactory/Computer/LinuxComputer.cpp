@@ -4,7 +4,7 @@
 using namespace std;
 
 namespace AbstractFactory {
-    string LinuxComputer::GetBrand() {
+    string LinuxComputer::GetBrand() const {
         return "Linux Computer";
     }
 }

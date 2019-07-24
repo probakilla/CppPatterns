@@ -7,6 +7,6 @@ namespace AbstractFactory {
     class WindowsComputer : public IComputer {
         public:
         WindowsComputer() = default;
-        std::string GetBrand();
+        std::string GetBrand() const;
     };
 }

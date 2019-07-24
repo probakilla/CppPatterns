@@ -7,8 +7,7 @@ namespace AbstractFactory {
     class IFactory {
         public:
         virtual ~IFactory() {}
-        virtual IComputer* GetComputer() = 0;
-        virtual IPhone* GetPhone() = 0;
+        virtual IComputer* GetComputer() const = 0;
+        virtual IPhone* GetPhone() const = 0;
     };
 }
-

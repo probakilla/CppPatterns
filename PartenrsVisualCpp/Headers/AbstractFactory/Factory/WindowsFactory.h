@@ -5,7 +5,7 @@ namespace AbstractFactory {
     class WindowsFactory : public IFactory {
         public:
         WindowsFactory() = default;
-        virtual IComputer* GetComputer();
-        virtual IPhone* GetPhone();
+        virtual IComputer* GetComputer() const;
+        virtual IPhone* GetPhone() const;
     };
 }

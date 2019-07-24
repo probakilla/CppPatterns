@@ -5,7 +5,7 @@ namespace AbstractFactory {
     class IComputer {
         public:
         virtual ~IComputer() = default;
-        virtual std::string GetBrand() = 0;
+        virtual std::string GetBrand() const = 0;
     };
 }
 

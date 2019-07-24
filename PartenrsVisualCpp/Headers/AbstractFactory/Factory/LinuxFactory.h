@@ -6,8 +6,8 @@ namespace AbstractFactory {
     class LinuxFactory : public IFactory {
         public:
         LinuxFactory() = default;
-        virtual IComputer* GetComputer();
-        virtual IPhone* GetPhone();
+        virtual IComputer* GetComputer() const;
+        virtual IPhone* GetPhone() const;
     };
 }
 

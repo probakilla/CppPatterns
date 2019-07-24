@@ -6,6 +6,6 @@ namespace AbstractFactory {
     class LinuxComputer : public IComputer {
         public:
         LinuxComputer() = default;
-        std::string GetBrand();
+        std::string GetBrand() const;
     };
 }

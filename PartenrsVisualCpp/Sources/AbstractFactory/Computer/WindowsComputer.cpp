@@ -4,7 +4,7 @@
 using namespace std;
 
 namespace AbstractFactory {
-    string WindowsComputer::GetBrand() {
+    string WindowsComputer::GetBrand() const {
         return "Windows Computer";
     }
 }

@@ -4,7 +4,7 @@
 using namespace std;
 
 namespace AbstractFactory {
-    string WindowsPhone::GetBrand() {
+    string WindowsPhone::GetBrand() const {
         return "Windows Phone";
     }
 }
