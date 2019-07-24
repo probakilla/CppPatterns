@@ -8,7 +8,12 @@ namespace Composite {
     class Army : public IUnit {
         public:
         virtual ~Army() = default;
-        virtual void InsertUnit(std::shared_ptr<IUnit> unit);
+
+        template<typename... T> void InsertUnit(T... args) {
+            int a[] = { 0, (Units.push_back(std::move(args)), 0)... };
+            static_cast<void>(a);
+        }
+
         virtual void RemoveUnit(int index);
         virtual std::string GetName() const;
 

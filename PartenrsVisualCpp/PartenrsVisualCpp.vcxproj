@@ -157,6 +157,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Headers\AbstractFactory\Computer\WindowsComputer.h" />
+    <ClInclude Include="Headers\Builder\IBuilder.h" />
+    <ClInclude Include="Headers\Builder\ProtossArmyBuilder.h" />
+    <ClInclude Include="Headers\Builder\TerranArmyBuilder.h" />
     <ClInclude Include="Headers\Composite\AbstractUnit.h" />
     <ClInclude Include="Headers\Composite\Army.h" />
     <ClInclude Include="Headers\Composite\IUnit.h" />
@@ -176,8 +179,11 @@
     <ClInclude Include="Headers\AbstractFactory\Factory\WindowsFactory.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Sources\Builder\ProtossArmyBuilder.cpp" />
+    <ClCompile Include="Sources\Builder\TerranArmyBuilder.cpp" />
     <ClCompile Include="Sources\Composite\AbstractUnit.cpp" />
     <ClCompile Include="Sources\Composite\Army.cpp" />
+    <ClCompile Include="UnitTests\CompositeTest.cpp" />
     <ClCompile Include="UnitTests\FactoryTest.cpp" />
     <ClCompile Include="Sources\AbstractFactory\Factory\LinuxFactory.cpp" />
     <ClCompile Include="Sources\AbstractFactory\Computer\LinuxPhone.cpp" />
